@@ -11,7 +11,7 @@
  * echo("test", 1); // "test"
  */
 export function echo(word, n) {
-  // TODO
+  return word.repeat(n);
 }
 
 /**
@@ -27,7 +27,14 @@ export function echo(word, n) {
  * echoWithSpace("test", 1); // "test"
  */
 export function echoWithSpace(word, n) {
-  // TODO
+  let result = "";
+  for (let i = 0; i < n; i++) {
+    result += word;
+    if (i < n - 1) {
+      result += "";
+    }
+  }
+  return result;
 }
 
 /**
@@ -42,7 +49,11 @@ export function echoWithSpace(word, n) {
  * sumTo(100); // 5050
  */
 export function sumTo(n) {
-  // TODO
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 /**
@@ -58,7 +69,11 @@ export function sumTo(n) {
  * sumFromTo(2, 2); // 2
  */
 export function sumFromTo(a, z) {
-  // TODO
+  let sum = 0;
+  for (let i = a; i <= z; i++) {
+    sum += i;
+  }
+  return sum;
 }
 
 /**
@@ -73,7 +88,7 @@ export function sumFromTo(a, z) {
  * countdown(5); // logs 5, 4, 3, 2, 1
  */
 export function countdown(n) {
-  // TODO
+  let countdown = 0; while (n >= 1)  
 }
 
 /**
@@ -84,6 +99,7 @@ export function countdown(n) {
  * sumOddsToN(5); // 9
  * @example
  * sumOddsToN(10); // 25
+ * 1 + 3 + 5 + 7 + 9
  * @example
  * sumOddsToN(1); // 1
  */
